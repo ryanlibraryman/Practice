@@ -1,0 +1,53 @@
+float r;
+float g;
+float b;
+float a;
+
+
+
+
+void setup(){ // Time: 10:37 PM
+  size(500,500);
+  
+}
+
+
+void draw(){ //10:47
+//r = random(255);
+//g = random(255);
+//b = random(255);
+//a = random(255);
+background (r,140,130);
+
+//10:47
+if (mouseX > width/2){
+  r = r + 1;
+} else{
+  r = r- 1;
+ //10:57
+}
+//BREAK TIME 11:07 - 11:17
+if (mouseX > height/10){
+  b = b + 2;
+  g = g - 30;
+}else{
+  b = b - 2;
+  g = g + 30;
+}
+//11:17
+
+//playing with code 11:27
+
+//Tried changing the colors but didnt work out
+//11:37
+if(mousePressed){
+r = r - 100;
+}else{ 
+  r = r + 100;
+}
+//11:57
+}
+
+
+
+
